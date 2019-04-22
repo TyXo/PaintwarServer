@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=10.15.3"
+  },
+  "dependencies": {
+    "ws": "^6.2.0"
+  },
+  "devDependencies": {
+    "wscat": "^2.2.1"
+  }
+}
