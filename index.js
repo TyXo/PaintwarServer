@@ -1,8 +1,8 @@
 const WebSocket = require("ws");
 const game = require("./game");
-const clients = {};
+const nanoid = require("nanoid");
 
-function noop() {}
+function noop() { }
 
 function log(action, ...params) {
   console.log(new Date(), action, ...params);
