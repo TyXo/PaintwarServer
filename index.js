@@ -1,5 +1,5 @@
 const WebSocket = require("ws");
-const game = require("./game");
+const game = require("./game.js");
 const nanoid = require("nanoid");
 
 function noop() { }

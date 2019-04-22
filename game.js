@@ -11,7 +11,7 @@ function onClientConnect(id, reply, broadcast) {
   });
 }
 
-function onClientDisconnect(id, reply, broadcast) {
+function onClientDisconnect(id, broadcast) {
   broadcast({ type: "disconnected", id });
 }
 
