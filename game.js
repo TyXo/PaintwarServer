@@ -22,7 +22,7 @@ function onClientMessage(id, data, reply, broadcast) {
   });
 }
 
-module.export = {
+module.exports = {
   onClientConnect,
   onClientDisconnect,
   onClientMessage

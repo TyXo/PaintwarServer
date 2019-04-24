@@ -1,8 +1,9 @@
 const WebSocket = require("ws");
-const game = require("./game.js");
 const nanoid = require("nanoid");
 
-function noop() { }
+const game = require("./game");
+
+function noop() {}
 
 function log(action, ...params) {
   console.log(new Date(), action, ...params);
@@ -12,7 +13,6 @@ function healthMonitor() {
   for (let client of server.clients) {
     if (client.keepAlive === false) {
       client.terminate();
-      clients.splice(i, 1);
     } else {
       client.keepAlive = false;
       client.ping(noop);
